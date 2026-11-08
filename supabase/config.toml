@@ -1,0 +1,12 @@
+project_id = "euibgmuegrgnievkgrhj"
+
+# Functions that are called by Supabase Auth (webhook signature) or by the
+# database cron job (service role key) check their own credentials in code.
+[functions.auth-email-hook]
+verify_jwt = false
+
+[functions.process-email-queue]
+verify_jwt = false
+
+[functions.send-transactional-email]
+verify_jwt = false

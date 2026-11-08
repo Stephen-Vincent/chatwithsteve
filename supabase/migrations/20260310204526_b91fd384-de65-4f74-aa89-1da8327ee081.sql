@@ -1,0 +1,1 @@
+ALTER TABLE public.profiles ADD COLUMN newsletter_opt_in boolean NOT NULL DEFAULT false;
